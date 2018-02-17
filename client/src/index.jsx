@@ -31,7 +31,7 @@ class App extends React.Component {
     if(term !== ''){
       $.ajax({
         method:'POST',
-        url: 'http://localhost:1128/repo',
+        url: 'http://localhost:1128/repos',
         data: term,
         success: function() {
           this.getRepo();
